@@ -1,0 +1,4 @@
+.grafico { position: relative; height: 300px; }
+.baixo { height: 240px; }
+.esq { position: absolute; inset: 0; }
+.resumo { color: var(--texto-2); font-size: 0.875rem; margin-top: 10px; }

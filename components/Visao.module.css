@@ -1,0 +1,24 @@
+.intro { color: var(--texto-2); margin-bottom: 12px; }
+.passos { list-style: none; margin: 0 0 14px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.passos li { font-size: 0.85rem; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--borda); color: var(--mudo); }
+.atual { border-color: var(--azul) !important; color: var(--azul) !important; font-weight: 500; }
+.feito { border-color: var(--verde) !important; background: #e4f5e8; color: #0b6b25 !important; }
+.fontes { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.fontes label { cursor: pointer; }
+.fontes label:focus-within { outline: 3px solid var(--laranja); outline-offset: 2px; }
+.palco { position: relative; background: #111; border-radius: 4px; overflow: hidden; margin-bottom: 10px; }
+.video { display: block; width: 100%; height: auto; max-height: 70vh; object-fit: contain; }
+.canvas { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; }
+.marcando { cursor: crosshair; outline: 3px solid var(--laranja); outline-offset: -3px; }
+.carregando {
+  position: absolute; inset: auto 10px 10px 10px; display: flex; align-items: center; gap: 10px;
+  background: rgba(0, 0, 0, 0.72); color: #fff; padding: 8px 12px; border-radius: 4px; font-size: 0.9rem;
+}
+.instrucao { background: #fff1e5; border: 1px solid #ffd2ad; color: #6e3500; padding: 8px 12px; border-radius: 4px; margin-bottom: 10px; font-weight: 500; }
+.ferramentas { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 12px; margin-bottom: 10px; }
+.grupoFerr { border: 1px solid var(--borda); border-radius: 4px; padding: 10px 12px; }
+.grupoFerr h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
+.resumo { margin: 8px 0; }
+.vermelho { color: var(--vermelho); font-weight: 500; }
+@media (max-width: 900px) { .ferramentas { grid-template-columns: 1fr; } }
+.atribuicao { font-size: 0.8rem; color: var(--mudo); margin: -4px 0 10px; }

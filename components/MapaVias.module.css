@@ -1,0 +1,17 @@
+.moldura { position: relative; }
+.mapa { height: 480px; border-radius: 4px; border: 1px solid var(--borda); background: #e9ecef; z-index: 0; }
+.esq { position: absolute; inset: 0; border-radius: 4px; }
+.legenda { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 0.875rem; color: var(--texto-2); }
+.legenda li { display: inline-flex; align-items: center; gap: 7px; }
+.sim { display: inline-block; width: 14px; height: 14px; border-radius: 50%; flex: none; }
+.ponto { background: var(--azul); }
+.instavel { background: var(--verde-claro); }
+.obra { border-radius: 2px; background: var(--laranja); }
+.lista { list-style: none; margin: 0; padding: 0; }
+.lista li + li { border-top: 1px solid var(--borda); }
+.lista button { width: 100%; display: flex; align-items: center; gap: 10px; text-align: left; cursor: pointer; background: none; border: 0; color: inherit; font: inherit; padding: 9px 4px; }
+.lista button:hover { background: var(--claro); }
+.texto { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.texto strong { font-weight: 500; font-size: 0.95rem; }
+.texto small { color: var(--texto-2); font-size: 0.82rem; }
+@media (max-width: 560px) { .mapa { height: 360px; } }

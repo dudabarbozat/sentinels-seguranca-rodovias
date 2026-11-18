@@ -1,0 +1,12 @@
+.opcoes { border: 1px solid var(--borda); border-radius: 4px; padding: 10px 14px 12px; margin: 0 0 14px; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.opcoes legend { padding: 0 6px; font-size: 0.9rem; font-weight: 500; color: var(--texto-2); }
+.grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.kpi { border: 1px solid var(--borda); border-top: 4px solid var(--azul); border-radius: 4px; padding: 10px 12px; }
+.laranja { border-top-color: var(--laranja); }
+.vermelho { border-top-color: var(--vermelho); }
+.verde { border-top-color: var(--verde); }
+.verdeClaro { border-top-color: var(--verde-claro); }
+.rotulo { color: var(--texto-2); font-size: 0.85rem; }
+.valor { font-size: 1.6rem; font-weight: 500; line-height: 1.2; margin: 2px 0; }
+.nota { color: var(--mudo); font-size: 0.78rem; }
+@media (max-width: 560px) { .grade { grid-template-columns: 1fr 1fr; gap: 8px; } .valor { font-size: 1.3rem; } }

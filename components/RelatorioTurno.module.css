@@ -1,0 +1,14 @@
+.intro { color: var(--texto-2); margin-bottom: 12px; }
+.esqueletos { display: grid; gap: 10px; margin-bottom: 12px; }
+.resultado { margin-bottom: 14px; }
+.cabecalho { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.risco { font-weight: 700; font-size: 0.8rem; padding: 0.2em 0.6em; border-radius: 0.25rem; text-transform: uppercase; letter-spacing: 0.03em; }
+.baixo { background: var(--verde); color: #fff; }
+.moderado { background: var(--laranja); color: #1d1100; }
+.alto { background: var(--vermelho); color: #fff; }
+.resumo { font-size: 1.02rem; margin-bottom: 12px; }
+.colunas { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.colunas h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+.colunas ul, .colunas ol { margin: 0; padding-left: 1.2rem; display: grid; gap: 6px; font-size: 0.92rem; }
+.recs { list-style: none; padding-left: 0 !important; }
+@media (max-width: 767px) { .colunas { grid-template-columns: 1fr; } }

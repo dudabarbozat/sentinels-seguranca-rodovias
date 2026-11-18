@@ -1,0 +1,42 @@
+.status { margin-top: 10px; font-size: 0.9rem; color: var(--texto-2); display: flex; align-items: center; justify-content: center; gap: 8px; }
+.opcoes { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-end; gap: 12px 24px; margin: 16px 0 10px; padding-top: 14px; border-top: 1px solid var(--borda); }
+.opcoes select { min-width: 230px; }
+.limite { display: flex; align-items: center; gap: 10px; }
+.limite input[type="range"] { width: 150px; accent-color: var(--azul); }
+.nova { animation: entra 1s ease-out; }
+@keyframes entra { from { background: #fff3cd; } }
+.vermelho { color: var(--vermelho); }
+.nowrap { white-space: nowrap; }
+.placa { color: var(--mudo); font-size: 0.8rem; }
+.limiteCelula { color: var(--mudo); font-size: 0.8rem; }
+.tituloCamera { font-size: 1.6rem; font-weight: 500; margin-bottom: 0.3rem; }
+.subtitulo { font-weight: 700; margin-bottom: 0.2rem; }
+.botoes { display: flex; gap: 6px; margin-top: 14px; }
+.camera { position: relative; margin: 8px 30px 0; height: 140px; overflow: hidden; background: #f4f4f4; }
+.faixa {
+  position: absolute; inset: 0 -264px 0 0;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 128px, #f4f4f4 128px 132px),
+    repeating-linear-gradient(90deg, transparent 0 28px, rgba(45, 45, 45, 0.6) 28px 33px),
+    repeating-linear-gradient(112deg, transparent 0 9px, rgba(55, 55, 55, 0.45) 9px 12px),
+    repeating-linear-gradient(90deg, #6f6f6f 0, #cdcdcd 66px, #6f6f6f 132px);
+  animation: rolar 6s linear infinite;
+}
+@keyframes rolar { to { transform: translateX(-132px); } }
+.selo { position: absolute; left: 8px; top: 8px; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; background: rgba(0, 0, 0, 0.65); color: #fff; padding: 2px 8px; border-radius: 3px; }
+.saida { margin-top: 10px; font-size: 0.875rem; color: var(--texto-2); }
+.veiculo { font-weight: 500; color: var(--texto); margin-bottom: 4px; }
+.barra { display: grid; grid-template-columns: 200px 1fr; align-items: center; gap: 10px; max-width: 520px; margin: 4px auto; text-align: left; }
+.barra i { display: block; height: 14px; border-radius: 3px; background: #f1f1f1; position: relative; overflow: hidden; }
+.barra i::after { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--v); }
+.mau::after { background: var(--vermelho); }
+.ok::after { background: var(--verde); }
+
+@media (max-width: 560px) {
+  .opcoes { justify-content: stretch; }
+  .opcoes > *, .opcoes select { min-width: 0; width: 100%; }
+  .limite input[type="range"] { flex: 1; width: auto; min-width: 0; }
+  .camera { margin: 8px 0 0; }
+  .botoes { justify-content: center; }
+  .barra { grid-template-columns: 1fr; gap: 2px; }
+}
