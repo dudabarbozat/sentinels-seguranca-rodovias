@@ -1,0 +1,23 @@
+.faixa { background: var(--azul-escuro); color: #fff; font-size: 0.875rem; }
+.interno { max-width: 1320px; margin: 0 auto; padding: 8px 16px; display: flex; align-items: center; gap: 12px 16px; }
+.texto { flex: 1; min-width: 0; line-height: 1.4; }
+.texto b { font-weight: 700; margin-right: 4px; }
+.texto span { color: rgba(255, 255, 255, 0.9); }
+.texto small { display: inline-block; margin-left: 6px; color: #7fe3e1; font-size: 0.8125rem; }
+.botao {
+  display: inline-flex; align-items: center; gap: 6px; flex: none; padding: 6px 12px; border-radius: var(--raio);
+  background: var(--turquesa); color: var(--turquesa-texto); font-weight: 500; text-decoration: none; white-space: nowrap;
+}
+.botao:hover { background: #33d1ce; }
+.fechar {
+  flex: none; display: grid; place-items: center; width: 32px; height: 32px; border: 0; border-radius: var(--raio);
+  background: transparent; color: #fff; cursor: pointer;
+}
+.fechar:hover { background: rgba(255, 255, 255, 0.12); }
+.botao:focus-visible, .fechar:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+@media (max-width: 640px) {
+  .interno { flex-wrap: wrap; position: relative; padding-right: 48px; }
+  .texto { flex-basis: 100%; }
+  .texto small { display: block; margin: 2px 0 0; }
+  .fechar { position: absolute; top: 6px; right: 8px; }
+}

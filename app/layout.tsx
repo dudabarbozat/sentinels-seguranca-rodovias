@@ -7,6 +7,7 @@ import "./globals.css";
 import Provedor from "@/components/Provedor";
 import Navbar from "@/components/Navbar";
 import Rodape from "@/components/Rodape";
+import FaixaProjeto from "@/components/FaixaProjeto";
 import { asset } from "@/lib/caminho";
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Pular para o conteúdo
         </a>
         <Provedor>
+          <FaixaProjeto />
           <Navbar />
           <main id="conteudo" tabIndex={-1}>
             {children}
